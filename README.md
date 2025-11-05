@@ -200,14 +200,47 @@ Extended contact information, appointment types, interactive map, and comprehens
 
 ## 🚀 Deployment
 
-This application is optimized for static hosting and can be deployed to:
+This application is optimized for deployment with both frontend and backend components:
 
-- Netlify
-- Vercel
-- GitHub Pages
-- Any static hosting service
+### Frontend (Static Hosting)
+- **Netlify**
+- **Vercel**
+- **GitHub Pages**
+- **Any static hosting service**
 
 The `dist/` folder contains all necessary files for deployment.
+
+### Backend (Node.js Server)
+- **VPS/Dedicated Server**
+- **Platform as a Service (Heroku, DigitalOcean, AWS)**
+- **Docker containerization**
+
+### Quick Start Guide
+
+1. **Clone and Install**:
+```bash
+git clone https://github.com/juniorSarh/DrVilakazi_Surgery.git
+cd DrVilakazi_Surgery
+npm install
+```
+
+2. **Backend Setup**:
+```bash
+cd backend
+npm install
+cp .env.example .env  # Configure environment variables
+npm run dev  # Start backend API server
+```
+
+3. **Frontend Setup** (separate terminal):
+```bash
+npm run dev  # Start frontend development server
+```
+
+4. **Access Applications**:
+- **Frontend**: `http://localhost:5173`
+- **Backend API**: `http://localhost:3001`
+- **API Documentation**: `http://localhost:3001/api`
 
 ## 📞 Contact Information
 
