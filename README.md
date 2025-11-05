@@ -31,11 +31,21 @@ This website showcases Dr. Vilakazi's general surgery practice with comprehensiv
 
 ## 🛠️ Technology Stack
 
+### Frontend
 - **Framework**: Vite + React
 - **Routing**: React Router DOM
 - **Styling**: CSS Modules with CSS variables for consistent theming
 - **Build Tool**: Vite
 - **Package Manager**: npm
+
+### Backend
+- **Server**: Node.js + Express
+- **Database**: SQLite with scalable schema design
+- **API**: RESTful API with comprehensive endpoints
+- **Authentication**: JWT-based security
+- **Email**: Nodemailer for appointment notifications
+- **Rate Limiting**: Express rate limiter for API protection
+- **Validation**: Express-validator for input validation
 
 ## 🚀 Getting Started
 
