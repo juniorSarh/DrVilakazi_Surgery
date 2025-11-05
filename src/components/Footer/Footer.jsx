@@ -47,7 +47,7 @@ const Footer = () => {
                 <span className={styles.contactIcon}>🕒</span>
                 <div>
                   Mon-Fri: 8AM-5PM<br />
-                  Emergency: 24/7 Available
+                  {/* Emergency: 24/7 Available */}
                 </div>
               </div>
             </div>

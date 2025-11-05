@@ -138,7 +138,7 @@ const Doctors = () => {
         </div>
       </div>
 
-      <div className={styles.testimonials}>
+      {/* <div className={styles.testimonials}>
         <div className="container">
           <h2 className={styles.testimonialsTitle}>Patient Experiences</h2>
           <p className={styles.testimonialsSubtitle}>
@@ -155,7 +155,7 @@ const Doctors = () => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
