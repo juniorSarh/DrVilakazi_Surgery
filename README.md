@@ -179,6 +179,14 @@ Surgeon profiles, credentials, and patient testimonials.
 ### Blog (/blog)
 Medical articles and patient education with category filtering and search.
 
+### Book Appointment (/book-appointment)
+Online appointment booking system with:
+- Step-by-step booking process
+- Real-time doctor availability
+- Patient information management
+- Email confirmations and reminders
+- Appointment management (cancel/reschedule)
+
 ### Contact (/contact)
 Extended contact information, appointment types, interactive map, and comprehensive contact form.
 
