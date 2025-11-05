@@ -1,0 +1,101 @@
+.hero {
+  background: linear-gradient(135deg, var(--light-blue) 0%, var(--primary-blue) 100%);
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" opacity="0.1"><rect fill="%23ffffff" width="1000" height="600"/><path fill="%231976d2" d="M0 400L100 375C200 350 400 300 600 325C800 350 900 400 950 425L1000 450L1000 600L950 600C900 600 800 600 700 600C600 600 500 600 400 600C300 600 200 600 100 600L0 600Z"/></svg>') no-repeat center;
+  background-size: cover;
+  opacity: 0.3;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: var(--white);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  opacity: 0.95;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.heroButton {
+  min-width: 160px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 500px;
+    padding: 2rem 0;
+  }
+
+  .heroTitle {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .heroButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heroButton {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: 450px;
+    padding: 1.5rem 0;
+  }
+
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+}
