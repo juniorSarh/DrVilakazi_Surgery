@@ -1,0 +1,140 @@
+.card {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cardImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background-color: var(--light-blue);
+}
+
+.cardContent {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardTitle {
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.cardDescription {
+  color: var(--text-light);
+  margin-bottom: 1rem;
+  flex: 1;
+  line-height: 1.6;
+}
+
+.cardFooter {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-gray);
+}
+
+.cardIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--primary-blue);
+}
+
+.serviceCard {
+  text-align: center;
+  padding: 2rem 1.5rem;
+}
+
+.serviceCard .cardIcon {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.serviceCard .cardTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.serviceCard .cardDescription {
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.doctorCard {
+  text-align: center;
+}
+
+.doctorCard .cardImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+  object-fit: cover;
+  border: 4px solid var(--light-blue);
+}
+
+.doctorCard .cardTitle {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.doctorCard .cardSubtitle {
+  color: var(--primary-blue);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.blogCard {
+  cursor: pointer;
+}
+
+.blogCard .cardImage {
+  height: 180px;
+}
+
+.blogCard .cardTitle {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.blogCard .cardMeta {
+  color: var(--text-light);
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.blogCard .cardDescription {
+  font-size: 0.95rem;
+}
+
+.blogCard .cardFooter {
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .cardContent {
+    padding: 1rem;
+  }
+
+  .serviceCard {
+    padding: 1.5rem 1rem;
+  }
+
+  .serviceCard .cardIcon {
+    font-size: 3rem;
+  }
+}
