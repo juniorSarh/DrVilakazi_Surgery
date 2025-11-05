@@ -1,6 +1,14 @@
-# Dr. Vilakazi Surgery Website
+# Dr. Vilakazi Surgery Website & Appointment Booking System
 
-A professional, modern medical website for Dr. Vilakazi's general surgery practice built with Vite + React.
+A professional, modern medical website for Dr. Vilakazi's general surgery practice with **Phase 2: Fully Functional Online Appointment Booking System** built with Vite + React + Node.js.
+
+## 🎉 **Phase 2 Complete!**
+
+**Status**: ✅ **FULLY IMPLEMENTED** - Online appointment booking system with real-time availability, patient management, and email notifications.
+
+**GitHub**: ✅ **PUSHED** - All code committed to main branch
+
+**Live Demo**: Frontend: `http://localhost:5173` | Backend API: `http://localhost:3001`
 
 ## 🏥 Overview
 
