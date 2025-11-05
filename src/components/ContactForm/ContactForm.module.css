@@ -1,0 +1,248 @@
+.contactForm {
+  background-color: var(--white);
+  padding: 4rem 0;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sectionTitle {
+  color: var(--text-dark);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.sectionSubtitle {
+  color: var(--text-light);
+  font-size: 1.125rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.formContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.formContainer {
+  background-color: var(--white);
+  padding: 2.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formLabel {
+  color: var(--text-dark);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.required {
+  color: var(--alert-red);
+}
+
+.formInput,
+.formTextarea {
+  padding: 12px 16px;
+  border: 2px solid var(--border-gray);
+  border-radius: var(--border-radius);
+  font-size: 16px;
+  font-family: inherit;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: var(--white);
+}
+
+.formInput:focus,
+.formTextarea:focus {
+  outline: none;
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.1);
+}
+
+.formTextarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.formInput.error,
+.formTextarea.error {
+  border-color: var(--alert-red);
+}
+
+.errorMessage {
+  color: var(--alert-red);
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  display: none;
+}
+
+.errorMessage.show {
+  display: block;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.formActions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.submitButton {
+  flex: 1;
+}
+
+.contactInfo {
+  background-color: var(--light-blue);
+  padding: 2.5rem;
+  border-radius: var(--border-radius);
+}
+
+.infoTitle {
+  color: var(--text-dark);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.infoItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.infoIcon {
+  font-size: 1.5rem;
+  color: var(--primary-blue);
+  margin-top: 0.2rem;
+  min-width: 24px;
+}
+
+.infoContent {
+  flex: 1;
+}
+
+.infoLabel {
+  color: var(--text-dark);
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.infoText {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.infoLink {
+  color: var(--primary-blue);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.infoLink:hover {
+  color: #1565c0;
+  text-decoration: underline;
+}
+
+.successMessage {
+  background-color: #e8f5e8;
+  border: 2px solid var(--success-green);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #2e7d32;
+  font-weight: 600;
+  display: none;
+}
+
+.successMessage.show {
+  display: block;
+}
+
+.errorMessageGlobal {
+  background-color: var(--alert-bg);
+  border: 2px solid var(--alert-red);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: var(--alert-red);
+  font-weight: 600;
+  display: none;
+}
+
+.errorMessageGlobal.show {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .contactForm {
+    padding: 3rem 0;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .sectionSubtitle {
+    font-size: 1rem;
+  }
+
+  .formContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .formContainer,
+  .contactInfo {
+    padding: 2rem 1.5rem;
+  }
+
+  .formRow {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .formActions {
+    flex-direction: column;
+  }
+
+  .submitButton {
+    order: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .formContainer,
+  .contactInfo {
+    padding: 1.5rem 1rem;
+  }
+
+  .infoTitle {
+    font-size: 1.25rem;
+  }
+}
