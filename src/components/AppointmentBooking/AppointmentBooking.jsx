@@ -515,7 +515,7 @@ const AppointmentBooking = () => {
       </div>
 
       <div className={styles.formGroup}>
-        <label className={styles.formLabel">Additional Notes</label>
+        <label className={styles.formLabel}>Additional Notes</label>
         <textarea
           className={styles.formTextarea}
           value={formData.notes}
