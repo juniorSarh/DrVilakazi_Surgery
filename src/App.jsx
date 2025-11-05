@@ -7,6 +7,7 @@ import About from './pages/About/About';
 import Services from './pages/Services/Services';
 import Doctors from './pages/Doctors/Doctors';
 import Blog from './pages/Blog/Blog';
+import BookAppointment from './pages/BookAppointment/BookAppointment';
 import Contact from './pages/Contact/Contact';
 import NotFound from './pages/NotFound/NotFound';
 import './index.css';
