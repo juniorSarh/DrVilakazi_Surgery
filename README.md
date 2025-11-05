@@ -8,15 +8,26 @@ This website showcases Dr. Vilakazi's general surgery practice with comprehensiv
 
 ## ✨ Features
 
+### Frontend
 - **Landing Page**: Hero section, emergency information, services overview, location, and contact form
 - **Navigation**: Responsive navigation with mobile hamburger menu
-- **Pages**: Home, About, Services, Doctors, Blog, Contact
+- **Pages**: Home, About, Services, Doctors, Blog, Book Appointment, Contact
 - **Contact Form**: Validated contact form with real-time validation
 - **Emergency Information**: Prominent 24/7 emergency contact details
 - **Interactive Map**: Embedded Google Maps for practice location
 - **Blog System**: Medical insights and patient education articles
 - **Responsive Design**: Mobile-first approach with breakpoints at 768px and 1024px
 - **Professional Medical Aesthetic**: Blue/white color scheme with clean design
+
+### Appointment Booking System
+- **Online Booking**: Step-by-step appointment booking interface
+- **Real-time Availability**: Live time slot availability management
+- **Doctor Selection**: Choose from available surgeons and their schedules
+- **Patient Management**: Secure patient information storage and management
+- **Email Notifications**: Automated appointment confirmations and reminders
+- **Appointment Types**: Consultation, follow-up, and procedure scheduling
+- **Calendar Integration**: Doctor schedule management with availability tracking
+- **Booking Management**: Cancel and reschedule appointment functionality
 
 ## 🛠️ Technology Stack
 
