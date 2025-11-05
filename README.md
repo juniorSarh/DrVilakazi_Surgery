@@ -67,14 +67,29 @@ cd DrVilakazi_Surgery
 npm install
 ```
 
+3. Set up the backend (for appointment booking):
+```bash
+cd backend
+npm install
+cp .env.example .env  # Configure your environment variables
+```
+
 ### Development
 
-Start the development server:
+Start both development servers:
+
+**Frontend:**
 ```bash
 npm run dev
 ```
+The frontend will be available at `http://localhost:5173/`
 
-The application will be available at `http://localhost:5173/`
+**Backend (in separate terminal):**
+```bash
+cd backend
+npm run dev
+```
+The backend API will be available at `http://localhost:3001/`
 
 ### Production Build
 
