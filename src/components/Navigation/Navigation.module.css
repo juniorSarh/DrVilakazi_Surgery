@@ -1,0 +1,183 @@
+.navigation {
+  background-color: var(--white);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary-blue);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: #1565c0;
+  text-decoration: none;
+}
+
+.navMenu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navItem {
+  position: relative;
+}
+
+.navLink {
+  color: var(--text-dark);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.navLink:hover {
+  color: var(--primary-blue);
+  text-decoration: none;
+}
+
+.navLink.active {
+  color: var(--primary-blue);
+}
+
+.navLink.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-blue);
+}
+
+.ctaButton {
+  margin-left: 2rem;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: var(--text-dark);
+  margin: 3px 0;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+.hamburger:hover span {
+  background-color: var(--primary-blue);
+}
+
+.mobileMenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--white);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid var(--border-gray);
+}
+
+.mobileMenuOpen {
+  display: block;
+}
+
+.mobileNavMenu {
+  list-style: none;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.mobileNavItem {
+  border-bottom: 1px solid var(--border-gray);
+}
+
+.mobileNavItem:last-child {
+  border-bottom: none;
+}
+
+.mobileNavLink {
+  display: block;
+  color: var(--text-dark);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.mobileNavLink:hover {
+  background-color: var(--light-blue);
+  color: var(--primary-blue);
+  text-decoration: none;
+}
+
+.mobileNavLink.active {
+  background-color: var(--light-blue);
+  color: var(--primary-blue);
+}
+
+.mobileCta {
+  padding: 0 2rem 1rem;
+}
+
+@media (max-width: 768px) {
+  .navMenu {
+    display: none;
+  }
+
+  .ctaButton {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .mobileMenu {
+    display: none;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navContainer {
+    padding: 0.75rem 0;
+  }
+
+  .mobileNavLink {
+    padding: 0.75rem 1.5rem;
+  }
+
+  .mobileCta {
+    padding: 0 1.5rem 0.75rem;
+  }
+}
