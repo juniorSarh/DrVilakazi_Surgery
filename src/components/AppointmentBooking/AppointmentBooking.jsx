@@ -643,15 +643,15 @@ const AppointmentBooking = () => {
           <div className={`${styles.step} ${currentStep >= 3 ? styles.completed : ''} ${currentStep === 3 ? styles.active : ''}`}>
             <div className={styles.stepNumber}>3</div>
             <div className={styles.stepTitle}>Date & Time</div>
-            <div className={styles.stepDescription">Schedule your visit</div>
+            <div className={styles.stepDescription}>Schedule your visit</div>
           </div>
           <div className={`${styles.step} ${currentStep >= 4 ? styles.completed : ''} ${currentStep === 4 ? styles.active : ''}`}>
             <div className={styles.stepNumber}>4</div>
             <div className={styles.stepTitle}>Details</div>
-            <div className={styles.stepDescription">Visit information</div>
+            <div className={styles.stepDescription}>Visit information</div>
           </div>
           <div className={`${styles.step} ${currentStep === 5 ? styles.active : ''}`}>
-            <div className={styles.stepNumber}>✓</div>
+            <div className={styles.stepNumber}>5</div>
             <div className={styles.stepTitle}>Confirmation</div>
             <div className={styles.stepDescription}>Appointment booked</div>
           </div>
