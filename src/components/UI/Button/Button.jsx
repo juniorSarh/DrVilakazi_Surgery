@@ -7,6 +7,7 @@ const Button = ({
   size = 'medium',
   loading = false,
   disabled = false,
+  fullWidth = false,
   onClick,
   type = 'button',
   className = '',
@@ -17,6 +18,7 @@ const Button = ({
     styles[variant],
     styles[size],
     loading && styles.loading,
+    fullWidth && styles.fullWidth,
     className
   ].filter(Boolean).join(' ');
 
