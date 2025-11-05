@@ -1,0 +1,148 @@
+.emergencyAlert {
+  background-color: var(--alert-bg);
+  border: 2px solid var(--alert-red);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  margin: 2rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.emergencyAlert::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(211, 47, 47, 0.1), transparent);
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+.emergencyContent {
+  position: relative;
+  z-index: 1;
+}
+
+.emergencyIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.emergencyTitle {
+  color: var(--alert-red);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.emergencyPhone {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--alert-red);
+  margin-bottom: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.emergencyPhone:hover {
+  transform: scale(1.05);
+  text-decoration: none;
+  color: var(--alert-red);
+}
+
+.emergencyDescription {
+  font-size: 1.125rem;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.emergencyButton {
+  background-color: var(--alert-red);
+  color: var(--white);
+  padding: 12px 24px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  min-height: 48px;
+}
+
+.emergencyButton:hover {
+  background-color: #b71c1c;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .emergencyAlert {
+    padding: 1.5rem 1rem;
+    margin: 1.5rem 0;
+  }
+
+  .emergencyIcon {
+    font-size: 2.5rem;
+  }
+
+  .emergencyTitle {
+    font-size: 1.75rem;
+  }
+
+  .emergencyPhone {
+    font-size: 2rem;
+  }
+
+  .emergencyDescription {
+    font-size: 1rem;
+  }
+
+  .emergencyButton {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .emergencyAlert {
+    padding: 1rem 0.75rem;
+  }
+
+  .emergencyIcon {
+    font-size: 2rem;
+  }
+
+  .emergencyTitle {
+    font-size: 1.5rem;
+  }
+
+  .emergencyPhone {
+    font-size: 1.75rem;
+  }
+
+  .emergencyDescription {
+    font-size: 0.95rem;
+  }
+}
