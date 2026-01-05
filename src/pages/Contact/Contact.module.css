@@ -1,61 +1,99 @@
+:root {
+  --primary-blue: #1976d2;
+  --light-blue: #e3f2fd;
+  --alert-red: #d32f2f;
+  --alert-bg: #fde8e8;
+  --text-dark: #2c3e50;
+  --text-light: #666;
+  --white: #ffffff;
+  --background-light: #f5f7fa;
+  --border-radius: 8px;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
 .contact {
   background-color: var(--white);
-  padding: 4rem 0;
+  padding: 0 0 4rem;
+  min-height: 100vh;
 }
 
 .hero {
   background: linear-gradient(135deg, var(--light-blue) 0%, var(--primary-blue) 100%);
   color: var(--white);
-  padding: 6rem 0;
+  padding: 4rem 0;
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .heroTitle {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
+  color: var(--white);
 }
 
 .heroSubtitle {
-  font-size: 1.25rem;
-  opacity: 0.9;
-  max-width: 600px;
+  font-size: 1.1rem;
+  opacity: 0.95;
+  max-width: 700px;
   margin: 0 auto;
   line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .contactContent {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  margin-bottom: 4rem;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 .contactInfo {
-  background-color: var(--light-blue);
-  padding: 2.5rem;
+  background-color: var(--white);
+  padding: 2rem;
   border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  height: fit-content;
+  position: relative;
+  top: -2rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .contactTitle {
-  color: var(--text-dark);
-  font-size: 1.75rem;
+  color: var(--primary-blue);
+  font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--light-blue);
 }
 
 .contactMethod {
   display: flex;
   align-items: flex-start;
-  gap: 1rem;
-  margin-bottom: 2rem;
+  gap: 1.25rem;
+  margin-bottom: 1.75rem;
+  position: relative;
+}
+
+.contactMethod:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  bottom: -0.875rem;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .contactIcon {
   font-size: 1.5rem;
   color: var(--primary-blue);
   min-width: 24px;
+  margin-top: 0.25rem;
 }
 
 .contactDetails {
@@ -65,108 +103,88 @@
 .contactLabel {
   color: var(--text-dark);
   font-weight: 600;
-  margin-bottom: 0.5rem;
-  font-size: 1.125rem;
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
 }
 
-.contactInfo {
-  color: var(--text-light);
-  line-height: 1.6;
-}
-
-.contactLink {
-  color: var(--primary-blue);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.contactLink:hover {
-  color: #1565c0;
-  text-decoration: underline;
-}
-
-.emergencyContact {
-  background-color: var(--alert-bg);
-  border: 2px solid var(--alert-red);
-  border-radius: var(--border-radius);
-  padding: 1.5rem;
-  margin-top: 2rem;
-}
-
-.emergencyTitle {
-  color: var(--alert-red);
-  font-weight: 700;
-  margin-bottom: 0.75rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 1.25rem;
-}
-
-.emergencyPhone {
-  color: var(--alert-red);
-  font-size: 1.5rem;
-  font-weight: 700;
-  text-decoration: none;
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-.emergencyPhone:hover {
-  text-decoration: underline;
-}
-
-.emergencyText {
-  color: var(--text-dark);
-  line-height: 1.6;
-}
-
-.appointmentTypes {
-  margin-top: 2rem;
-}
-
-.appointmentType {
-  background-color: var(--white);
-  padding: 1.5rem;
-  border-radius: var(--border-radius);
-  margin-bottom: 1rem;
-  border-left: 4px solid var(--primary-blue);
-}
-
-.appointmentTypeTitle {
-  color: var(--text-dark);
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
-.appointmentTypeDescription {
+.contactText {
   color: var(--text-light);
   line-height: 1.6;
   font-size: 0.95rem;
 }
 
-.mapSection {
-  background-color: var(--background-light);
-  padding: 4rem 0;
-}
-
-.mapTitle {
-  color: var(--text-dark);
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.mapSubtitle {
-  color: var(--text-light);
-  font-size: 1.125rem;
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto 2rem;
+.contactText p {
+  margin: 0.25rem 0;
   line-height: 1.6;
 }
 
+.contactDescription {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin: 0.25rem 0 0;
+  opacity: 0.9;
+}
+
+.contactLink {
+  color: var(--primary-blue);
+  text-decoration: none;
+  transition: var(--transition);
+  font-weight: 500;
+}
+
+.contactLink:hover {
+  color: #115293;
+  text-decoration: underline;
+}
+
+.emergencyContact {
+  background-color: #fef6f6;
+  border: 1px solid #f8d7da;
+  border-radius: var(--border-radius);
+  padding: 1.25rem;
+  margin-top: 1.5rem;
+  transition: var(--transition);
+}
+
+.emergencyContact:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.emergencyTitle {
+  color: var(--alert-red);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.emergencyPhone {
+  color: var(--alert-red);
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: block;
+  margin: 0.5rem 0;
+  transition: var(--transition);
+}
+
+.emergencyPhone:hover {
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
+.emergencyText {
+  color: var(--text-light);
+  line-height: 1.5;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Map Section */
 .mapContainer {
   background-color: var(--white);
   border-radius: var(--border-radius);
@@ -174,51 +192,64 @@
   overflow: hidden;
   height: 500px;
   position: relative;
+  margin-top: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.mapWrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 .mapIframe {
   width: 100%;
   height: 100%;
   border: none;
+  display: block;
 }
 
 .directionsButtons {
   display: flex;
   gap: 1rem;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   flex-wrap: wrap;
 }
 
 .directionsButton {
   background-color: var(--primary-blue);
   color: var(--white);
-  padding: 12px 24px;
+  padding: 0.75rem 1.5rem;
   border: none;
-  border-radius: var(--border-radius);
+  border-radius: 50px;
   font-weight: 600;
   cursor: pointer;
   text-decoration: none;
-  display: inline-block;
-  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-width: 160px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .directionsButton:hover {
   background-color: #1565c0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   text-decoration: none;
   color: var(--white);
-  transform: translateY(-2px);
 }
 
-.directionsButton.secondary {
-  background-color: var(--white);
-  color: var(--primary-blue);
-  border: 2px solid var(--primary-blue);
+.callButton {
+  background-color: #4caf50;
 }
 
-.directionsButton.secondary:hover {
-  background-color: var(--primary-blue);
-  color: var(--white);
+.callButton:hover {
+  background-color: #3d8b40;
 }
 
 .faq {
@@ -260,16 +291,31 @@
   line-height: 1.6;
 }
 
+@media (max-width: 992px) {
+  .contactContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .contactInfo {
+    top: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .mapContainer {
+    height: 400px;
+  }
+}
+
 @media (max-width: 768px) {
   .contact {
+    padding: 1.5rem 0 3rem;
+  }
+  
+  .hero {
     padding: 3rem 0;
   }
-
-  .hero {
-    padding: 4rem 0;
-    margin-bottom: 3rem;
-  }
-
+  
   .heroTitle {
     font-size: 2rem;
   }

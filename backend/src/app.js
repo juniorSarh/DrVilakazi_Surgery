@@ -9,8 +9,6 @@ import { fileURLToPath } from 'url';
 
 // Import routes
 import appointmentsRouter from './routes/appointments.js';
-import doctorsRouter from './routes/doctors.js';
-import patientsRouter from './routes/patients.js';
 import availabilityRouter from './routes/availability.js';
 
 // Import database initialization
@@ -80,8 +78,6 @@ app.get('/health', (req, res) => {
 
 // API routes
 app.use('/api/appointments', appointmentsRouter);
-app.use('/api/doctors', doctorsRouter);
-app.use('/api/patients', patientsRouter);
 app.use('/api/availability', availabilityRouter);
 
 // 404 handler
