@@ -14,7 +14,7 @@
 }
 
 .button:focus {
-  outline: 2px solid var(--primary-blue);
+  outline: 2px solid var(--primary-red);
   outline-offset: 2px;
 }
 
@@ -24,12 +24,12 @@
 }
 
 .primary {
-  background-color: var(--primary-blue);
+  background-color: var(--primary-red);
   color: var(--white);
 }
 
 .primary:hover:not(:disabled) {
-  background-color: #1565c0;
+  background-color: var(--dark-red);
   text-decoration: none;
   transform: translateY(-2px);
   box-shadow: var(--shadow);
@@ -37,12 +37,12 @@
 
 .secondary {
   background-color: transparent;
-  color: var(--primary-blue);
-  border: 2px solid var(--primary-blue);
+  color: var(--primary-red);
+  border: 2px solid var(--primary-red);
 }
 
 .secondary:hover:not(:disabled) {
-  background-color: var(--primary-blue);
+  background-color: var(--primary-red);
   color: var(--white);
   text-decoration: none;
   transform: translateY(-2px);
@@ -57,7 +57,7 @@
 
 .outline:hover:not(:disabled) {
   background-color: var(--white);
-  color: var(--primary-blue);
+  color: var(--primary-red);
   text-decoration: none;
 }
 

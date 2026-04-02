@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Button from '../UI/Button/Button';
+import StethoscopeLogo from '../StethoscopeLogo/StethoscopeLogo';
 import styles from './Navigation.module.css';
 
 const Navigation = () => {
@@ -28,7 +29,10 @@ const Navigation = () => {
       <div className="container">
         <div className={styles.navContainer}>
           <Link to="/" className={styles.logo} onClick={closeMobileMenu}>
-            Dr. Vilakazi Surgery
+            <div className={styles.logoContainer}>
+              <StethoscopeLogo width={32} height={32} />
+              <span className={styles.logoText}>Dr. Vilakazi Surgery</span>
+            </div>
           </Link>
 
           <ul className={styles.navMenu}>

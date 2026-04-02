@@ -1,5 +1,5 @@
 .hero {
-  background: linear-gradient(135deg, var(--light-blue) 0%, var(--primary-blue) 100%);
+  background: linear-gradient(135deg, var(--light-red) 0%, var(--primary-red) 100%);
   min-height: 600px;
   display: flex;
   align-items: center;
@@ -14,7 +14,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" opacity="0.1"><rect fill="%23ffffff" width="1000" height="600"/><path fill="%231976d2" d="M0 400L100 375C200 350 400 300 600 325C800 350 900 400 950 425L1000 450L1000 600L950 600C900 600 800 600 700 600C600 600 500 600 400 600C300 600 200 600 100 600L0 600Z"/></svg>') no-repeat center;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" opacity="0.1"><rect fill="%23ffffff" width="1000" height="600"/><path fill="%23dc2626" d="M0 400L100 375C200 350 400 300 600 325C800 350 900 400 950 425L1000 450L1000 600L950 600C900 600 800 600 700 600C600 600 500 600 400 600C300 600 200 600 100 600L0 600Z"/></svg>') no-repeat center;
   background-size: cover;
   opacity: 0.3;
 }
