@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Contact.module.css';
 
 const Contact = () => {
-  const practiceAddress = "123 Medical Plaza, Suite 100, Johannesburg, SA 2000";
+  const practiceAddress = "12 Voew Street, Harrismith, Free State, SA 2000";
   const mapUrl = `https://maps.google.com/maps?q=${encodeURIComponent(practiceAddress)}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
   const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(practiceAddress)}`;
 

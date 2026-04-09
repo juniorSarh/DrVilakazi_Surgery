@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Location.module.css';
 
 const Location = () => {
-  const practiceAddress = "123 Medical Plaza, Suite 100, Johannesburg, SA 2000";
+  const practiceAddress = "12 Voew Street, Harrismith, Free State, SA 2000";
   const mapUrl = `https://maps.google.com/maps?q=${encodeURIComponent(practiceAddress)}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
 
   return (
@@ -22,9 +22,8 @@ const Location = () => {
             <div className={styles.address}>
               <h4 className={styles.addressTitle}>Address</h4>
               <p className={styles.addressText}>
-                123 Medical Plaza, Suite 100<br />
-                Johannesburg, SA 2000<br />
-                South Africa
+                12 Voew Street<br />
+                Harrismith, Free State, SA 2000
               </p>
             </div>
 
